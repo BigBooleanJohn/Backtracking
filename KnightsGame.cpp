@@ -1,5 +1,5 @@
 /* this is a file that implements a backtracking algorithm to
-find a solution to the Knight's-game problem*/
+find a solution to the Knight's-game problem. It is still in progress*/
 
 #include <iostream>
 #include <ios>
