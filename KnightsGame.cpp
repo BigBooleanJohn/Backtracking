@@ -29,6 +29,7 @@ public:
         }
     }
 
+    /* determining if the square is an open move for the knight*/
     bool isValidSquare(vector<vector<int>> &chessBoard, vector<int> &newLocation)
     {
         if (newLocation[0] >= 0 && newLocation[0] < chessBoard.size() && newLocation[1] >= 0 && newLocation[1] < chessBoard.size() && chessBoard[newLocation[0]][newLocation[1]] == -1)
@@ -37,7 +38,7 @@ public:
         }
         return false;
     }
-
+    /*printing the board*/
     void PrintBoard(vector<vector<int>> &chessBoard)
     {
         for (int i = 0; i < chessBoard.size(); i++)

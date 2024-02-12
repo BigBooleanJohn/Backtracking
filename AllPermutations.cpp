@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+
 using std::string;
 using std::vector;
 
@@ -13,6 +14,9 @@ public:
         vals = v;
     }
 
+    /*this is a backtracking algorithm to find all permutations of the input. if the current permutation is of the proper size,
+        it is added to the permutations array. Due to the recursion across the for loop, we can know that each addition to a new
+        permutation will be a unique combination/node of the state-space recursion tree*/
     void Backtrack(vector<vector<int>> &permutations, vector<bool> &booleans, vector<int> givenData, vector<int> &curPermutation)
     {
         if (curPermutation.size() == givenData.size())
@@ -52,7 +56,7 @@ public:
 
 int main(int argc, char *argv[])
 {
-    vector<int> vec3 = {5, 8, 6, 10};
+    vector<int> vec3 = {5, 8, 6, 9, 4}; // testing the method
     Test T = Test(vec3);
 
     vector<vector<int>> vec = T.allpermutations(vec3);

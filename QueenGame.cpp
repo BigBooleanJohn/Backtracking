@@ -4,6 +4,8 @@
 using std::string;
 using std::vector;
 
+/*This is a project aimed to explore how we can set queens on a chessboard such that no two queens attack each other. it
+ employs a backtracking algorithm to achieve this*/
 class Queen
 {
 public:
